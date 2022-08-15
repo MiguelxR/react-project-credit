@@ -11,6 +11,8 @@ import { CardPage } from "./pages/Card";
 import { CreditPage } from "./pages/Credit";
 import { TotalPaymentPage } from "./pages/TotalPayment";
 import { PartialPaymentPage } from "./pages/PartialPayment";
+import { ConfirmPaymentPage } from "./pages/ConfirmPayment";
+import { SuccessfulPaymentPage } from "./pages/SuccessfulPayment";
 
 export default function App() {
   return (
@@ -26,6 +28,8 @@ export default function App() {
         <Route path="products/card" element={<CardPage />} />
         <Route path="products/card/totalpayment" element={<TotalPaymentPage />} />
         <Route path="products/card/partialpayment" element={<PartialPaymentPage />} />
+        <Route path="products/card/confirmpayment" element={<ConfirmPaymentPage />} />
+        <Route path="products/card/successfulpayment" element={<SuccessfulPaymentPage />} />
         <Route path="products/credit" element={<CreditPage />} />
         <Route path="settings" element={<SettingsPage />} />
       </Route>
